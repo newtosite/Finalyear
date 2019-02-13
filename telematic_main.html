@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>TELEMATIC DASHBOARD</title>
+		<style>
+		body
+		{
+			background-color:black;
+		}
+		.u2
+		{
+			font-size:50px;
+		}
+		img 
+		{
+			opacity: 0.5;
+		}
+		.row
+		{
+			border-radius: 50%;
+			padding-left:12%;
+		}
+		.column {
+			margin-top:2%; 
+			float: left;
+			width: 23%;
+			padding-left:0 ;
+		}
+		.tooltiptext {
+			visibility: hidden;
+			width: 120px;
+			background-color: black;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+            margin-top:110%;
+			margin-right:40px;
+			/* Position the tooltip */
+			/*position: absolute;*/
+			z-index: 1;
+}
+
+		.row::after
+		{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		
+		.column1 
+		{
+			float: left;
+			width: 110%;
+			padding-left: 9%;
+			margin-top:-4%;
+			
+		}
+		.row3::after
+		{
+			content:"";
+			clear:both;
+			display:table;
+		}
+		.center
+		{
+			display: block;
+			margin-left: 10%;
+			margin-right: auto;
+			width: 50%;
+			padding-top : 10%;
+			position : relative;
+		}
+		.digi{
+			width: 50%;
+			position: relative;
+			opacity: 1;
+			transition: 0.3s ease;
+			cursor: pointer;
+			}
+		.digi:hover
+		{
+			opacity : 1;
+			transform : scale(1.5,1.5);
+			size:30px;
+		}
+		.digi:hover .tooltiptext{
+		 visibility: visible;
+}
+.ccontainer{
+float:right;
+}
+		</style>
+	</head>
+	<body>
+			<div class="row1">
+			<div class="ccontainer">
+			    <img src="add.png" style="width:55px;">
+				<h6 style ="color: white;width:50px;margin-top:4%;margin-right:0%;">Add user</h6></div>
+				<h1 style = "color : white" ><center>DASHBOARD</h1><hr class="u2">
+				
+			</div>
+			<div class="container" >
+			<div class="row">
+			<div class="column">
+			 <div class="digi">
+				<p style ="color: white">DIGITAL WALLET</p>
+				<a href='textDisplay.html'><img src="digital_wallet.png"  width=100% ></a>
+			<span  class="tooltiptext">Includes scanned documensts!</span>
+			</div>	
+			</div>
+			<div class="column">
+			<div class="digi">
+				<p style ="color: white"> TOUR MODE</P>
+				<a href="mapmyindia-maps-atlas-near-by-api-example.php"><img src="tour_mode.jpg"  width=100% ></a>
+				<span  class="tooltiptext">Activate the TOUR MODE!</span>
+			</div>
+			</div>
+			<div class="column">
+			<div class="digi">
+				<p style ="color: white">PARENTAL CONTROL</p>
+				<img src="parental_control.png"  width=100% >
+				<span  class="tooltiptext">Parental Control Desk!</span>
+			</div>
+			</div>
+			
+			</div>
+	<div class="row3">
+	<div class = "column1">
+		<img src="das.jpg" height="300" class="center">
+	</div>
+	</div>
+	</body>
+</html> 
